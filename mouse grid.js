@@ -1,5 +1,5 @@
 let tileCount = 20;
-let actStrokeCap = ROUND; // Initial strokeCap
+let actStrokeCap = 'ROUND'; // Initial strokeCap
 
 function setup() {
   createCanvas(windowWidth, windowHeight); // Make canvas fill entire window
@@ -30,7 +30,16 @@ function draw() {
 
 // Handle key press events to change stroke cap style
 function keyReleased() {
-  if (key == '1') actStrokeCap = ROUND;
-  if (key == '2') actStrokeCap = SQUARE;
-  if (key == '3') actStrokeCap = PROJECT;
+  if (key == '1') {
+    actStrokeCap = 'ROUND';
+    console.log('Stroke Cap: ROUND');
+  }
+  if (key == '2') {
+    actStrokeCap = 'SQUARE';
+    console.log('Stroke Cap: SQUARE');
+  }
+  if (key == '3') {
+    actStrokeCap = 'PROJECT';
+    console.log('Stroke Cap: PROJECT');
+  }
 }
