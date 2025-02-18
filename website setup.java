@@ -19,9 +19,9 @@
   <!-- Link to the p5.js library hosted on the p5.js CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 
-  <!-- Link to your sketch.js file hosted on GitHub Pages -->
-  <script src="https://yourusername.github.io/my-p5-sketch/sketch.js"></script>
+  <!-- Corrected link to your sketch.js file hosted on GitHub Pages -->
+  <script src="https://YanganXia1999.github.io/my-p5js-sketch/mouse%20grid.js"></script>
+
 
 </body>
 </html>
-
