@@ -1,5 +1,5 @@
 let tileCount = 20;
-let actStrokeCap = 'ROUND'; // Initial strokeCap
+let actStrokeCap = 'ROUND'; // Use strings instead of constants
 
 function setup() {
   createCanvas(windowWidth, windowHeight); // Make canvas fill entire window
@@ -11,11 +11,12 @@ function draw() {
 
   strokeCap(actStrokeCap); // Set stroke cap based on the current value
 
+  // Loop through grid to draw lines
   for (let gridY = 0; gridY < tileCount; gridY++) {
     for (let gridX = 0; gridX < tileCount; gridX++) {
       let posX = width / tileCount * gridX;
       let posY = height / tileCount * gridY;
-      let toggle = int(random(0, 2));
+      let toggle = int(random(0, 2)); // Random toggle to decide line direction
 
       if (toggle == 0) {
         strokeWeight(mouseX / 20);
